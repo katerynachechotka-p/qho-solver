@@ -125,7 +125,7 @@ for n in range(min(states.shape[1], nstates_table)):
     p_mean = np.sum(np.conjugate(psi) * ppsi) * dx
 
     # p^2 = -ħ^2 d^2/dx^2
-    d2psi = np.gradient(np.gradient(psi, dx), dx)
+    d2psi = D2 @ psi 
     p2psi = -(hbar**2) * d2psi
     p2_mean = np.sum(np.conjugate(psi) * p2psi) * dx
 
