@@ -36,9 +36,7 @@ First-order perturbation theory prediction: E₀ ≈ E₀⁽⁰⁾ + ⟨ψ₀|λ
 | 0.050 | 0.532533 | 0.537388 | 9.12×10⁻³ |
 | 0.100 | 0.559019 | 0.574866 | 2.83×10⁻² |
 
-**Key finding:** Perturbation theory breaks down at λ ≥ 0.05 (error exceeds 
-1%). At λ = 0.1, relative error reaches 2.83%, demonstrating that numerical 
-diagonalization becomes essential in the strongly anharmonic regime.
+**Key finding:** First-order perturbation theory is within 0.1% up to λ = 0.01. Its error reaches 0.9% at λ = 0.05 and 2.9% at λ = 0.1. The full series has zero radius of convergence (Bender & Wu 1969), so exact diagonalization is the reliable route at any λ.
 
 ![Anharmonic Analysis](figures/anharmonic_analysis.png)
 
